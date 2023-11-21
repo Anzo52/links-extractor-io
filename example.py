@@ -1,7 +1,9 @@
 from src.services.extractor import Extractor
 from src.utils.printer import Printer
 
-urls = ['https://github.com', 'https://google.com']
+urls = []
+url = input("Enter url: ")
+urls.append(url)
 extractor = Extractor()
 links = extractor.extract(urls, timeout=10)
 
